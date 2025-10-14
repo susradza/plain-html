@@ -1,3 +1,14 @@
-h1 {
-  text-decoration: underline;
+html{
+    font-size: 22px;
+}
+
+body{
+    background-color: darkolivegreen;
+    color: whitesmoke;
+}
+a:visited {
+    color:lightgrey;
+}
+a:hover, a:active {
+    color: #eee;
 }
