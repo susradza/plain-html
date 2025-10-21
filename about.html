@@ -17,19 +17,82 @@
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous"/>
 
+<style>
+/* Flexbox Übung */
+    main {
+        display: flex;
+        border: 5px solid yellow;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 1200px;
+        justify-content: left;
+    }
+    
+    main div {
+        border: 3px solid green;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        align-items: center;
+    }
+
+    p {
+        margin: 10px;
+        padding: 10px;
+    }
+
+</style>
+
 <!-- HTML -->
 </head>
 
 <body>
-    <div>
-        <input type="checkbox"
-     class="checkbox" id="checkbox">
-        <label for="checkbox" class="label">
-            <i class="fas fa-moon fa-1x"></i>
-            <i class="fas fa-sun fa-1x"></i>
-            <div class="ball"></div>
-        </label>
-    </div>
+
+    <main>
+        <div class="Dog">
+            <h2>This is Mr Pug.</h2>
+            <img src="./img/uglyDog.jpeg" alt="Not so ugly Dog" width="150px" height="100px">
+            <p>Not so ugly Dog. Not so ugly Dog. Not so ugly Dog Not so ugly Dog Not so ugly Dog Not so ugly Dog Not so ugly Dog Not so ugly Dog <br> Not so ugly Dog Not so ugly Dog Not so ugly Dog Not so ugly Dog Not so ugly Dog Not so ugly Dog Not so ugly Dog Not so ugly Dog Not so ugly Dog Not so ugly Dog Not so ugly Dog Not so ugly Dog-</p>
+        </div>
+           
+        <div class="Cat">
+            <img src="./img/perser_pictures_3_1600x.jpg.webp" alt="Ugly Cat" width="150px" height="100px">
+            Ugly Cat
+        </div>
+            
+        <div class="Fish">
+            <img src="./img/ca9bdae6-0001-0004-0000-000000531668_w520_r1_fpx52.05_fpy54.96.jpg" alt="Super ugly Fish" width="150px" height="100px">
+            Super ugly Fish
+        </div>
+        <div class="Dog">
+            <img src="./img/uglyDog.jpeg" alt="Not so ugly Dog" width="150px" height="100px">
+            Not so ugly Dog
+        </div>
+           
+        <div class="Cat">
+            <img src="./img/perser_pictures_3_1600x.jpg.webp" alt="Ugly Cat" width="150px" height="100px">
+            Ugly Cat
+        </div>
+            
+        <div class="Fish">
+            <img src="./img/ca9bdae6-0001-0004-0000-000000531668_w520_r1_fpx52.05_fpy54.96.jpg" alt="Super ugly Fish" width="150px" height="100px">
+            Super ugly Fish
+        </div><div class="Dog">
+            <img src="./img/uglyDog.jpeg" alt="Not so ugly Dog" width="150px" height="100px">
+            Not so ugly Dog
+        </div>
+           
+        <div class="Cat">
+            <img src="./img/perser_pictures_3_1600x.jpg.webp" alt="Ugly Cat" width="150px" height="100px">
+            Ugly Cat
+        </div>
+            
+        <div class="Fish">
+            <img src="./img/ca9bdae6-0001-0004-0000-000000531668_w520_r1_fpx52.05_fpy54.96.jpg" alt="Super ugly Fish" width="150px" height="100px">
+            Super ugly Fish
+        </div>
+    </main>
+
 </body>
 
 </html>
