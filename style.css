@@ -1,14 +1,48 @@
-html{
-    font-size: 22px;
+html {
+  font-size: 22px;
 }
 
-body{
-    background-color: #9CAF88;
-    color: whitesmoke;
+body {
+  background-color: #9caf88;
+  color: whitesmoke;
 }
 a:visited {
-    color:lightgrey;
+  color: #000;
 }
-a:hover, a:active {
-    color: #eee;
+a:hover,
+a:active {
+  color: darkgreen;
+}
+.Navi {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #f0f0f0;
+  position: fixed;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 10px 0 10px 15px;
+  text-decoration: none;
+}
+
+#div1 {
+  margin-left: 25%;
+  padding: 1px 15px;
+  height: 100%;
+}
+
+table,
+tr,
+td,
+caption {
+  border: 1px solid #eee;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-collapse: collapse;
+  padding: 0.5rem;
 }
