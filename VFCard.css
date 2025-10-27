@@ -52,7 +52,7 @@ body {
 
 /*  GigaTV Card */
 .whiteCard {
-  width: 800px;
+  width: 50%;
   min-width: 530px;
   height: min-content;
   background: white;
@@ -80,8 +80,7 @@ body {
 .headlineCard {
   margin-bottom: 12px;
   font-size: 28px;
-  width: max-content;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 .cardContent {
@@ -113,9 +112,9 @@ a {
 
 /* Second Variant ProductCard */
 .buttonCard {
-  width: 400px;
-  height: fit-content;
+  width: 50%;
   min-width: 530px;
+  height: min-content;
   background: white;
   margin-top: 5px;
   padding: 20px;
@@ -129,9 +128,13 @@ a {
   border-radius: 4px;
 }
 .cardImage2 {
-  width: fit-content;
+  width: 100%;
   margin-top: 0;
   border-radius: 6px;
+}
+.cardImage2 img {
+  width: 100%;
+  border-radius: 4px;
 }
 
 .higlightBadge {
