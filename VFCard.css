@@ -37,6 +37,7 @@
 
 * {
   font-family: Vodafone, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -51,7 +52,7 @@ body {
 
 /*  GigaTV Card */
 .whiteCard {
-  width: 50%;
+  width: 800px;
   min-width: 530px;
   height: min-content;
   background: white;
@@ -63,7 +64,9 @@ body {
 }
 
 .imageWindow {
+  display: block;
   height: 280px;
+  width: 100%;
   overflow: hidden;
   border-radius: 4px;
 }
@@ -71,7 +74,7 @@ body {
 .cardImage {
   width: 100%;
   margin-top: 0;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .headlineCard {
@@ -110,7 +113,7 @@ a {
 
 /* Second Variant ProductCard */
 .buttonCard {
-  width: 50%;
+  width: 400px;
   height: fit-content;
   min-width: 530px;
   background: white;
@@ -126,8 +129,8 @@ a {
   border-radius: 4px;
 }
 .cardImage2 {
-  width: fit-content%;
-  margin-top: 0%;
+  width: fit-content;
+  margin-top: 0;
   border-radius: 6px;
 }
 
@@ -140,4 +143,5 @@ a {
   font-weight: bold;
   padding: 6px 12px;
   border-radius: 20px;
+  margin-top: 10px;
 }
