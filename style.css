@@ -1,11 +1,46 @@
 html {
   font-size: 22px;
 }
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-color: #9caf88;
   color: whitesmoke;
 }
+
+/* Grid Einstellung */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-area: "navi navi navi" "header header header" "main main main"
+    "footer footer footer";
+}
+
+/* Grid Bereiche */
+.navi {
+  grid-area: navi;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+/* Media Querys für Breakpoints */
+@media screen and (max-width: 500px) {
+  main {
+    background-color: white;
+  }
+}
+
 a:visited {
   color: #000;
 }
@@ -13,7 +48,7 @@ a:hover,
 a:active {
   color: darkgreen;
 }
-.Navi {
+.navi {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -29,12 +64,6 @@ li a {
   color: black;
   padding: 10px 0 10px 15px;
   text-decoration: none;
-}
-
-#div1 {
-  margin-left: 25%;
-  padding: 1px 15px;
-  height: 100%;
 }
 
 table,
