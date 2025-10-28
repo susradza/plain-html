@@ -1,0 +1,64 @@
+/* Grid Layout Einstellungen  */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: #9caf88;
+  color: #3f1f01;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-area: "navi navi navi" "header header header" "main main main"
+    "footer footer footer";
+}
+
+/* Grid Bereiche */
+.navi {
+  grid-area: navi;
+  background-color: #3f1f01;
+  font-family: sans-serif;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+/* Media Query Einstellung */
+@media screen and (max-width: 500px) {
+  main {
+    background-color: aliceblue;
+  }
+}
+
+/* Navidesign */
+ul {
+  display: flex;
+  align-items: center;
+  padding-inline-start: 0.5em;
+  height: 3em;
+}
+
+li {
+  display: inline;
+  color: white;
+}
+
+li a {
+  padding: 10px 0 10px 15px;
+  text-decoration: none;
+}
