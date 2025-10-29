@@ -85,8 +85,67 @@ li a {
   height: min-content;
   background: white;
   margin-top: 5px;
-  padding: 20px;
+  padding: 10px;
   border: #3f1f01;
   border-radius: 6px;
   box-shadow: 0 0 10px rgb(187, 187, 187);
+}
+
+/* Responsive Cards – Beverage Selection */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.card {
+  background: white;
+  width: 350px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 15px 0 15px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 00.5);
+}
+.teaImg {
+  background-image: url(./img/teaImg.jpg);
+  border-radius: 14px 0 0 0;
+}
+.coffeeImg {
+  background-image: url(./img/coffeeImg.jpg);
+  border-radius: 14px 0 0 0;
+}
+.cocoaImg {
+  background-image: url(./img/cocoaImg.jpg);
+  border-radius: 14px 0 0 0;
+}
+
+.cardImage {
+  background-color: aquamarine;
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+
+/* Padding für Card Content */
+.card h2 {
+  padding: 10px;
+}
+.card p {
+  padding: 10px;
+}
+.card a {
+  background-color: #3f1f01;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+}
+
+/* Card hover effect */
+.card:hover {
+  background-color: darkolivegreen;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
 }
