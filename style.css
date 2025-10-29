@@ -75,3 +75,15 @@ caption {
   border-collapse: collapse;
   padding: 0.5rem;
 }
+
+.infoBox {
+  width: 50%;
+  min-width: 530px;
+  height: min-content;
+  background: white;
+  margin-top: 5px;
+  padding: 20px;
+  border: #3f1f01;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgb(187, 187, 187);
+}
