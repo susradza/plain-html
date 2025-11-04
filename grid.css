@@ -17,15 +17,17 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 60px 1fr 1fr 1fr;
+  grid-template-rows: 3.75rem 22.5rem * 3.75rem;
   /* grid-area: "navi navi navi navi" "header header header header"
   "main main main main" "footer footer footer footer"; */
 }
 .navi {
   grid-column-start: 1;
   grid-column-end: 5;
+  position: sticky;
+  top: 0;
   background-color: #3f1f01;
-  font-family: sans-serif;
+  font-family: Madimi One, sans-serif;
 }
 header {
   grid-column-start: 1;

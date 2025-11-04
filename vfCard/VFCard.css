@@ -42,19 +42,41 @@
 
 body {
   display: flex;
-  flex-direction: column;
-  justify-content: left;
-  gap: 16px;
   background-color: #f4f4f4;
-  align-items: top;
+  align-items: center;
   height: 100vh;
+  width: 100%;
+  min-width: 580px;
+  justify-content: center;
+}
+.grid {
+  grid-auto-flow: column;
+  justify-content: center;
+  width: 90%;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: auto;
+}
+
+/* Media Query Einstellung */
+@media screen and (max-width: 850px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+#item-a {
+  grid-column: 1;
+  grid-row: 1 / 3;
 }
 
 /*  GigaTV Card */
 .whiteCard {
-  width: 50%;
-  min-width: 530px;
-  height: min-content;
+  display: flex;
+  flex-direction: column;
   background: white;
   margin-top: 5px;
   padding: 20px;
@@ -62,27 +84,23 @@ body {
   border-radius: 6px;
   box-shadow: 0 0 10px rgb(187, 187, 187);
 }
-
 .imageWindow {
   display: block;
-  height: 280px;
+  height: 350px;
   width: 100%;
   overflow: hidden;
   border-radius: 4px;
 }
-
 .cardImage {
   width: 100%;
   margin-top: 0;
   border-radius: 4px;
 }
-
 .headlineCard {
   margin-bottom: 12px;
   font-size: 28px;
   white-space: wrap;
 }
-
 .cardContent {
   margin-left: 20px;
   margin-top: 20px;
@@ -110,114 +128,11 @@ a {
   text-decoration: none;
 }
 
-/* Second Variant ProductCard */
-.buttonCard {
-  width: 50%;
-  min-width: 530px;
-  height: min-content;
-  background: white;
-  margin-top: 5px;
-  padding: 20px;
-  border: black;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgb(187, 187, 187);
-}
-.imageWindow2 {
-  height: 280px;
-  overflow: hidden;
-  border-radius: 4px;
-}
-.cardImage2 {
-  width: 100%;
-  margin-top: 0;
-  border-radius: 6px;
-}
-.cardImage2 img {
-  width: 100%;
-  border-radius: 4px;
-}
-
-.higlightBadge {
-  display: inline-flex;
-  align-items: start;
-  background-color: #fecb00;
-  color: black;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 20px;
-  margin-top: 10px;
-}
-.priceDesk2 {
-  font-size: 30px;
-  font-family: Vodafone, sans-serif;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.euro2 {
-  font-size: 36px;
-  margin: 0;
-}
-
-/* Third Variant ProductCard */
-.promoCard {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 50%;
-  min-width: 530px;
-  height: min-content;
-  background: white;
-  margin-top: 5px;
-  padding: 20px;
-  border: black;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgb(187, 187, 187);
-}
-.imageWindow3 {
-  height: 280px;
-  overflow: hidden;
-  border-radius: 4px;
-}
-.cardImage3 {
-  width: 40%;
-  height: 50%;
-  margin-top: 0;
-  border-radius: 6px;
-}
-.iPhone17 img {
-  width: 100%;
-  border-radius: 4px;
-}
-
-.higlightBadge {
-  display: inline-flex;
-  align-items: start;
-  background-color: #fecb00;
-  color: black;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 20px;
-  margin-top: 10px;
-}
-.priceDesk3 {
-  font-size: 30px;
-  font-family: Vodafone, sans-serif;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.euro3 {
-  font-size: 36px;
-  margin: 0;
-}
-
-/* Fourth Variant of ProductCard */
+/* Second Variant of ProductCard */
 .promoCard2 {
   display: flex;
-  flex-direction: row;
-  width: 50%;
-  min-width: 530px;
-  height: min-content;
+  flex-direction: row-reverse;
+  max-width: fit-content;
   background: white;
   margin-top: 5px;
   padding: 20px;
@@ -225,14 +140,8 @@ a {
   border-radius: 6px;
   box-shadow: 0 0 10px rgb(187, 187, 187);
 }
-.imageWindo4 {
-  height: 280px;
+.imageWindow4 {
+  height: 350px;
   overflow: hidden;
   border-radius: 4px;
-}
-.cardImage4 {
-  width: 40%;
-  height: 50%;
-  margin-top: 0;
-  border-radius: 6px;
 }
