@@ -63,8 +63,7 @@ body {
 /* Media Query Einstellung */
 @media screen and (max-width: 850px) {
   .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 }
 
@@ -144,4 +143,15 @@ a {
   height: 350px;
   overflow: hidden;
   border-radius: 4px;
+}
+.highlightBadge {
+  display: inline-flex;
+  align-items: start;
+  background-color: #fecb00;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-top: 10px;
 }
