@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Kranichbauer mit Array & For-Loop</title>
+</head>
+<body> 
+<div id="birds">
+    <h1>&Uuml;bersicht Kraniche</h1>
+
+    <ul id="craneList">
+        <!-- Dummi Inhalt, wir ja aktuell komplett überschrieben von unserem JS -->
+        <li>Kranich Nr 1 heisst Heinrich.</li>
+        <li>Kranich Nr 2 heisst Lotte.</li>
+        <li>Kranich Nr 3 heisst .</li>
+    </ul>   
+
+ <p>
+    
+    <ul>
+     <li>Die Ausgabe erweitern um das Geschlecht des Tieres! z.B. " und das Geschlecht ist xxx!"</li>
+     <li>Was für Fehler könnten in dieser Seite in dem JS passieren? Wann würde das JS nicht mehr funktionieren?</li>
+     <li>Fehlermöglichkeiten vorrausplanen und diese Use Cases mit Vorrausschau mit einbeziehen</li>
+ 
+ 
+ 
+ </ul> </p>
+</div>
+
+
+
+<script>
+
+//Eine bessere Form der Datenhaltung: Array in Array, die Daten sind schon in einem Kontext (Objekt) gebündelt.
+
+const cranes = [
+  ['Heinrich', 'm', 1985],
+  ['Hannelore', 'w', 1983],
+  ['Kranich McKranichface', 'm', 1983]
+
+];
+
+
+
+//cranes[0][0] => Name
+//cranes[0][1] => Geschlecht
+//cranes[0][2] => Geburtsjahr
+
+
+//eine Variable muss ich vor dem Benutzen bekannt machen 
+let theContentFromTheLoop ="";
+
+//if(cranes.length == genders.length){
+    //mit einer For-Loop kann ich einen Befehl mehrmals hintereinander ausführen lassen, 
+    // dazu muss einen Startwert, eine Bedingung und einen Iterator definieren.
+    for(i=0; i < cranes.length; i++){ //Deklaration => mache was in den {} steht mehrmals
+        
+   
+    //Kondition: vor dem Ausgeben basierend auf dem Wert einen Ausgabewert definieren
+    let gender; let salutation;
+    if (cranes[i][1] == "m") {
+        gender = "männlich";
+        salutation ="er";
+
+    } else if (cranes[i][1] == "w"){
+        gender = "weiblich";
+        salutation ="sie";
+    } else {
+        gender = "[Keine Angaben]";
+        salutation = "";
+    }
+
+         if (cranes[i] != '' && cranes[i] != undefined) {
+            //wir sammeln das ganze HTML in der Variable zusammen
+            theContentFromTheLoop += "<li>Kranich Nr " + (i+1) +" heisst " + cranes[i][0] + " und " + salutation + " ist " + gender + "!</li>";
+            // theContentFromTheLoop += "<li>Kranich Nr 4 heisst .</li>";
+        }
+    }
+   
+
+
+//ausserhalb der For-Schleife noch ein Fazit:
+
+ theContentFromTheLoop += "<li>Aktuell haben wir " + cranes.length + " Kraniche auf unserem Hof</li>";
+
+console.log(theContentFromTheLoop);
+//Nachdem die For-Loop fertig ist, gibt am am Ende den gesammelten Wert aus
+document.getElementById('craneList').innerHTML +=  theContentFromTheLoop;
+
+
+
+
+</script>
+</body>
+
+
+</html>
