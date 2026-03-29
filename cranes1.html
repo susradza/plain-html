@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Kranichbauer mit Array & For-Loop</title>
+</head>
+<body> 
+<div id="birds">
+    <h1>&Uuml;bersicht Kraniche</h1>
+
+    <ul id="craneList">
+        <li>Kranich Nr 1 heisst Heinrich.</li>
+        <li>Kranich Nr 2 heisst Lotte.</li>
+        <li>Kranich Nr 3 heisst .</li>
+    </ul>   
+
+ <p>Wie viele Einträge es gibt ändert sich durch Verkauf und Nachwuchs fast täglich.</p>
+</div>
+
+
+
+<script>
+//Ein Array kann mehrere Werte speichern
+const cranes = ['Heinrich', 'Hannelore', 'Bastian', 'Bettina'];
+
+//eine Variable muss ich vor dem Benutzen bekannt machen 
+let theContentFromTheLoop ="";
+
+//mit einer For-Loop kann ich einen Befehl mehrmals hintereinander ausführen lassen, 
+// dazu muss einen Startwert, eine Bedingung und einen Iterator definieren.
+for(i=0; i < cranes.length; i++){ //Deklaration => mache was in den {} steht mehrmals
+    
+//bis es funktioniert ist es oft eine Hilfe, in der Console die Werte auszugegen. So bekommt man direkt mit, wenn etwas nicht funkioniert oder komische Werte erzeugt werden.
+//console.log("<li>Kranich Nr  " + (i+1) +" heisst " + cranes[i] + "</li>");
+
+//wir sammeln das ganze HTML in der Variable zusammen
+ theContentFromTheLoop += "<li>Kranich Nr " + (i+1) +" heisst " + cranes[i] + "</li>";
+// theContentFromTheLoop += "<li>Kranich Nr 4 heisst .</li>";
+
+}
+
+//Nachdem die For-Loop fertig ist, gibt am am Ende den gesammelten Wert aus
+document.getElementById('craneList').innerHTML =  theContentFromTheLoop;
+
+//console.log(cranes[2]);
+
+
+</script>
+</body>
+
+
+</html>
